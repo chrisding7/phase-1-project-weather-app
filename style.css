@@ -1,1 +1,135 @@
+body{
+    background-image: linear-gradient(to bottom right, #ff4d00, #4936c7);
+    font-family:'Trebuchet MS';
+}
 
+.weather-container {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #ff4d00, #4936c7);
+}
+
+/* .search-container {
+    width: 200px;
+} */
+
+.search-container input[type=text] {
+    width: 185px;
+    float: right;
+    padding: 0%;
+    margin-top: 20px;
+    margin-right:50px;
+    font-size: 20px;
+    height: 30px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+input {
+    font-style: italic;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 5px;
+    transition: 0.5s;
+    border: 3px solid grey
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 1rem;
+    cursor: pointer;
+    background-color:  #ff4d00;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.openbtn:hover {
+    background-color:  #ff4d00;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+/* .five-day-container {
+    width: 19%;
+    align-content: center;
+    margin-left: 4px;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid grey;
+} */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 20px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+#title {
+    text-align: center;
+    font-size: 70px;
+    border: 3px solid black;
+    -webkit-text-stroke: 0.3vw white;
+    text-transform: uppercase;
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer{
+    position:relative;
+     text-align: center;
+     bottom:0
+ }
+ 
+ .logo {
+     position: relative;
+     width: 500;
+     height: 300;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;   
+ }

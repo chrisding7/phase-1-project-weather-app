@@ -1,1 +1,110 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type='text/javascript' src='index.js'></script>
+  </head>
+  
+  <body>
+    <div class="search-container">
+        <form id="search-bar">
+            <input type='text' name="city" placeholder='Search World Cities'>
+        </form>
+    </div>
 
+    <div id="main">
+        <button class="openbtn" onclick="openSidebar()">&#9776; View U.S. Cities</button>
+        <h1></h1>
+        <div class=""></div>
+    </div>
+
+    <div>
+        <img src="https://cdn.dribbble.com/users/915711/screenshots/5827243/weather_icon3.png" alt="logo" 
+        class="logo">
+        <h1 id='title' data-text="Weather App">Weather App</h1>
+    </div>
+
+    <div id="current-forecast" class="tabcontent">
+        <div class="weather-container">
+            <h1 id="current-city">City: </h1>
+            <h2>Temperature</h2>
+            <img src="" alt="weather-icon"/>
+            <h3>Weather Type</h3>
+            <p id="feels-like">Feels like: </p>
+            <p id="wind">Wind: </p>
+            <p id="sunrise">Sunrise: </p>
+            <p id="sunset">Sunset: </p>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <a id ="#newYork" onclick="displayNY()" href="#New York"> New York</a>
+        <a id ="#Los Angeles" onclick="displayLA()" href="#Los Angeles">Los Angeles</a>
+        <a id ="#Chicago" onclick="displayChicago()" href="#Chicago">Chicago</a>
+        <a id ="#Houston" onclick="displayHouston()" href="#Houston">Houston</a>
+        <a id ="#Philadelphia" onclick="displayPhilly()" href="#Philadelphia">Philadelphia</a>
+        <a id ="#Phoenix" onclick="displayPhoenix()" href="#Phoenix">Phoenix</a>
+        <a id ="#San Antonio" onclick="displaySA()" href="#San Antonio">San Antonio</a>
+        <a id ="#San Diego"onclick='displaySD()' href="#San Diego">San Diego</a>
+        <a id ="#San Francisco"onclick='displaySF()' href="#San Francisco">San Francisco</a>
+        <a id ="#Detroit"onclick='displayDetroit()' href="#Detroit">Detroit</a>
+        <a id ="#Memphis"onclick='displayMemphis()' href="#Memphis">Memphis</a>
+        <a id ="#Denver"onclick='displayDenver()' href="#Denver">Denver</a>
+        <a id ="#Washington"onclick='displayWashington()' href="#Washington">Washington</a>
+        <a id ="#Oklahoma City"onclick='displayOC()' href="#Oklahoma City">Oklahoma City</a>
+        <a id ="#Portland"onclick='displayPortland()' href="#Portland">Portland</a>
+        <a id ="#Las Vegas"onclick='displayLV()' href="#Las Vegas">Las Vegas</a>
+    </div>
+    
+    <!-- <button class="tab-button" id="current-forecast-button">Current Forecast</button>
+    <button class="tab-button" id="five-day-button">5-Day Forecast</button> -->
+    
+    <!-- <div id="five-day" class="tabcontent">
+        <h1>City: </h1>
+        <h2 id="five-day-header">5-Day Forecast</h3>
+
+        <div class="five-day-container" id="day-1">
+            <h2>Date</h2>
+            <h2 id="day-1-temp">Temperature</h2>
+            <img src="" alt="weather-icon"/>
+            <h3>Weather Type</h3>
+        </div>
+            
+        <div class="five-day-container" id="day-2">
+            <h2>Date</h2>
+            <h2 id="day-2-temp">Temperature</h2>
+            <img src="" alt="weather-icon"/>
+            <h3>Weather Type</h3>
+        </div>
+
+        <div class="five-day-container" id="day-3">
+            <h2>Date</h2>
+            <h2 id="day-3-temp">Temperature</h2>
+            <img src="" alt="weather-icon"/>
+            <h3>Weather Type</h3>
+        </div>
+
+        <div class="five-day-container" id="day-4">
+            <h2>Date</h2>
+            <h2 id="day-4-temp">Temperature</h2>
+            <img src="" alt="weather-icon"/>
+            <h3>Weather Type</h3>
+        </div>
+
+        <div class="five-day-container" id="day-5">
+            <h2>Date</h2>
+            <h2 id="day-5-temp">Temperature</h2>
+            <img src="" alt="weather-icon"/>
+            <h3>Weather Type</h3>
+        </div>
+
+    </div> -->
+
+    <footer class=footer align="center">
+        <p> Created by CD<sup>2</sup> Chris Ding & Chris Dennis</p>
+    </footer>
+
+  </body>
+</html>
